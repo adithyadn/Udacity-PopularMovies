@@ -1,71 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="60dp"
-        android:text="Chappie"
-        android:padding="20dp"
-        android:background="#009688"
-        android:textColor="#FFFFFF"
-        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="161dp"
-            android:src="@drawable/sample_0"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:id="@+id/banner"
+            android:elevation="10dp"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="10dp">
+            <TextView
+                android:id="@+id/movie_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:text="Room"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/movie_tagline_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp"
+                android:text="Love knows no boundaries"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:columnOrderPreserved="true"
+            android:background="#009688"
+            android:elevation="5sp">
+            <TextView
+                android:id="@+id/movie_year_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="2016"
+                android:textSize="13sp"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:layout_columnWeight="1"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/movie_duration_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="151 min"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:layout_columnWeight="1"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/movie_rating_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="5.9 / 10"
+                android:textSize="13dp"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"
+                android:textAlignment="center" />
+        </GridLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:orientation="vertical"
-            android:layout_weight="1">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2015"
-                android:textSize="40dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="120 min"
-                android:textSize="30dp"
-                android:textStyle="italic"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8.0 / 10"
-                android:textSize="20dp"
-                />
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:text="MARK AS FAVORITE"
-                android:padding="5dp"
-                android:background="#80CBC4"/>
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/movie_overview_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before." />
         </LinearLayout>
 
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorPrimaryDark"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="In the near future, a mechanized police force patrols the streets and deals with lawbreakers -- but now, the people are fighting back. When one police droid is stolen and given new programming, he acquires the ability to feel and think for himself. While the robot, dubbed Chappie (Sharlto Copley), puzzles out human behavior, the authorities begin to see him as a danger to mankind and order; they will stop at nothing to ensure that Chappie is the last of his kind."
-            android:padding="10dp"
-            />
-    </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

@@ -6,7 +6,7 @@
     android:baselineAligned="false"
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
-    tools:context="com.adithyanayabu.android.popularmovies.MoviesActivity">
+    tools:context=".ui.MoviesActivity">
 
     <!--
     This layout is a two-pane layout for the Items master/detail flow.
@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/fragment_movies"
-        android:name="com.adithyanayabu.android.popularmovies.MoviesFragment"
+        android:name="com.adithyanayabu.android.popularmovies.ui.MoviesFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3"
