@@ -5,9 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Created by adithyanayabu1 on 4/3/16.
  * {
- * "id": 28,
- * "name": "Action"
- * }
+ "id": 28,
+ "name": "Action"
+ }
+ *
  */
 public class Genre {
 

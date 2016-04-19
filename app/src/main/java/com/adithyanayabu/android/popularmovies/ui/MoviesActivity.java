@@ -15,7 +15,7 @@ import com.adithyanayabu.android.popularmovies.model.MovieSummary;
  */
 public class MoviesActivity extends Activity implements MoviesFragment.MovieDetailCallBack {
 
-    private boolean mTwoPane;
+    public static boolean mTwoPane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

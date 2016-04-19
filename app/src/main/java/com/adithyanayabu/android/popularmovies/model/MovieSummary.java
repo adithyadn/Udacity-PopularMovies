@@ -7,28 +7,28 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Created by adithyanayabu1 on 3/27/16.
- * <p>
- * {
- * "poster_path": "/6bCplVkhowCjTHXWv49UjRPn0eK.jpg",
- * "adult": false,
- * "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
- * "release_date": "2016-03-23",
- * "genre_ids": [
- * 28,
- * 12,
- * 14,
- * 878
- * ],
- * "id": 209112,
- * "original_title": "Batman v Superman: Dawn of Justice",
- * "original_language": "en",
- * "title": "Batman v Superman: Dawn of Justice",
- * "backdrop_path": "/cejHDyHEJSjtpsPgGzm1GNsZLMF.jpg",
- * "popularity": 76.625193,
- * "vote_count": 600,
- * "video": false,
- * "vote_average": 5.95
- * }
+ *
+ {
+ "poster_path": "/6bCplVkhowCjTHXWv49UjRPn0eK.jpg",
+ "adult": false,
+ "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+ "release_date": "2016-03-23",
+ "genre_ids": [
+ 28,
+ 12,
+ 14,
+ 878
+ ],
+ "id": 209112,
+ "original_title": "Batman v Superman: Dawn of Justice",
+ "original_language": "en",
+ "title": "Batman v Superman: Dawn of Justice",
+ "backdrop_path": "/cejHDyHEJSjtpsPgGzm1GNsZLMF.jpg",
+ "popularity": 76.625193,
+ "vote_count": 600,
+ "video": false,
+ "vote_average": 5.95
+ }
  */
 public class MovieSummary implements Parcelable {
     @JsonProperty("poster_path")
@@ -59,7 +59,6 @@ public class MovieSummary implements Parcelable {
     public MovieSummary() {
 
     }
-
     protected MovieSummary(Parcel in) {
         posterPath = in.readString();
         isAdult = in.readByte() != 0;

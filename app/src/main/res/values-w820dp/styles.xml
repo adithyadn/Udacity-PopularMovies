@@ -12,8 +12,7 @@
     </style>
 
     <!-- Settings activity theme. -->
-    <style name="SettingsTheme" parent="AppTheme">
-    </style>
+    <style name="SettingsTheme" parent="AppTheme"></style>
 
     <!-- main activity action bar styles -->
     <style name="ActionBar.Solid.Sunshine.NoTitle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
@@ -46,8 +45,7 @@
 
     <style name="imageview">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">180sp</item>
-        <item name="android:elevation">10dp</item>
+        <item name="android:layout_height">280sp</item>
     </style>
 
 </resources>

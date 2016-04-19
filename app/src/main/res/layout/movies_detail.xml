@@ -9,10 +9,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="180sp"
             android:id="@+id/banner"
-            android:elevation="10dp"></ImageView>
+            style="@style/imageview"></ImageView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,26 +18,15 @@
             android:elevation="10dp">
             <TextView
                 android:id="@+id/movie_title_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#009688"
-                android:paddingTop="15dp"
-                android:paddingLeft="15dp"
-                android:text="Room"
-                android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                style="@style/title_text" />
             <TextView
                 android:id="@+id/movie_tagline_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#009688"
-                android:paddingLeft="15dp"
-                android:paddingBottom="15dp"
-                android:text="Love knows no boundaries"
-                android:textColor="#FFFFFF"
                 android:textSize="10sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                style="@style/title_text" />
         </LinearLayout>
 
         <GridLayout
@@ -51,39 +38,18 @@
             android:elevation="5sp">
             <TextView
                 android:id="@+id/movie_year_tv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="2016"
-                android:textSize="13sp"
-                android:padding="10sp"
-                android:textStyle="bold"
-                android:layout_columnWeight="1"
-                android:textColor="#FFFFFF"
-                android:textAlignment="center" />
+                style="@style/MovieGridText"
+                android:layout_columnWeight="1" />
 
             <TextView
                 android:id="@+id/movie_duration_tv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="151 min"
-                android:textSize="13sp"
-                android:textStyle="bold"
-                android:padding="10sp"
-                android:layout_columnWeight="1"
-                android:textColor="#FFFFFF"
-                android:textAlignment="center" />
+                style="@style/MovieGridText"
+                android:layout_columnWeight="1" />
 
             <TextView
                 android:id="@+id/movie_rating_tv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="5.9 / 10"
-                android:textSize="13dp"
-                android:padding="10sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:layout_columnWeight="1"
-                android:textAlignment="center" />
+                style="@style/MovieGridText"
+                android:layout_columnWeight="1" />
         </GridLayout>
 
         <LinearLayout
@@ -94,8 +60,7 @@
                 android:id="@+id/movie_overview_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before." />
+                android:padding="10dp" />
         </LinearLayout>
 
     </LinearLayout>

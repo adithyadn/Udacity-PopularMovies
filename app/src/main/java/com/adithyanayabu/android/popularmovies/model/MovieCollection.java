@@ -5,11 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Created by adithyanayabu1 on 4/3/16.
  * {
- * "id": 209131,
- * "name": "Man of Steel Collection",
- * "poster_path": "/oOHKVVQkaDvc5R5vM0NjhZPYfKc.jpg",
- * "backdrop_path": "/csERw2A3XIsGegkzil6UGpyhqfw.jpg"
- * }
+ "id": 209131,
+ "name": "Man of Steel Collection",
+ "poster_path": "/oOHKVVQkaDvc5R5vM0NjhZPYfKc.jpg",
+ "backdrop_path": "/csERw2A3XIsGegkzil6UGpyhqfw.jpg"
+ }
+ *
  */
 
 public class MovieCollection {

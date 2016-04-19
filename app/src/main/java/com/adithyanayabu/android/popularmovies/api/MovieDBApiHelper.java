@@ -9,8 +9,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 public class MovieDBApiHelper {
 
     private MovieDBApi apiHelper;
-    public static String API_KEY = "";
-
+    public static String API_KEY = "API_KEY";
     public MovieDBApiHelper() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://api.themoviedb.org/3/movie/")

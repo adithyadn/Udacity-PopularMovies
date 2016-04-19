@@ -5,9 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * Created by adithyanayabu1 on 4/3/16.
  * {
- * "iso_639_1": "en",
- * "name": "English"
- * }
+ "iso_639_1": "en",
+ "name": "English"
+ }
  */
 public class Language {
     @JsonProperty("iso_639_1")

@@ -30,7 +30,6 @@ public class MoviesFragment extends Fragment implements Callback<MovieListRespon
     private MovieListResponse movieListResponse;
     private GridView gridView;
     MovieDBApiHelper apiHelper = new MovieDBApiHelper();
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,12 +79,13 @@ public class MoviesFragment extends Fragment implements Callback<MovieListRespon
         call.enqueue(this);
     }
 
-
     @Override
     public void onResponse(Call<MovieListResponse> call, Response<MovieListResponse> response) {
         Log.w("RETROFIT", "Service Responded");
         this.movieListResponse = response.body();
         gridView.setAdapter(new ImageAdapter(getActivity().getApplicationContext(), movieListResponse));
+        if (MoviesActivity.mTwoPane)
+            ((MovieDetailCallBack) getActivity()).requestMovieDetail(movieListResponse.getResults().get(0));
 
     }
 
@@ -97,6 +97,5 @@ public class MoviesFragment extends Fragment implements Callback<MovieListRespon
     public interface MovieDetailCallBack {
         void requestMovieDetail(MovieSummary summary);
     }
-
 
 }
